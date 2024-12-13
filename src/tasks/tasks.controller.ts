@@ -14,7 +14,7 @@ export class TasksController {
   //
   @Get() //
   getTasks(@Query('status') status?: 'COMPLETE' | 'ONGOING') {
-    return [];
+    return [status];
   }
 
   @Get('ongoing') //  this one has to be top of :id or 'ongoing' - gets treated as id
