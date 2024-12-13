@@ -13,7 +13,7 @@ import {
 export class TasksController {
   //
   @Get() //
-  getTasks(@Query(status) status?: 'COMPLETE' | 'ONGOING') {
+  getTasks(@Query('status') status?: 'COMPLETE' | 'ONGOING') {
     return [];
   }
 
